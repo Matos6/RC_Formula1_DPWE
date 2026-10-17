@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Fórmula 1</title>
+ 
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+ 
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+ 
+        /* Cabeçalho e menu */
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+ 
+        nav ul {
+            list-style: none;
+            margin-top: 10px;
+            display: flex;
+            gap: 20px;
+        }
+ 
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+ 
+        /* Main e aside lado a lado */
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+ 
+        main {
+            flex: 3;
+        }
+ 
+        aside {
+            flex: 1;
+            background: #ddd;
+            padding: 20px;
+        }
+ 
+        aside ol,
+        aside ul {
+            margin-left: 20px;
+        }
+ 
+        /* Secções e artigos */
+        section {
+            margin-bottom: 30px;
+        }
+ 
+        article {
+            background: #f4f4f4;
+            padding: 20px;
+            margin-top: 10px;
+        }
+ 
+        /* Duas imagens lado a lado */
+        .imagens {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            
+        }
+ 
+        .imagens p {
+            flex: 1;
+            border: 1px solid black;
+            padding: 40px;
+            text-align: center;
+        }
+        .imagens img{
+            width: 100%;
+            height:300px;
+            object-fit: contain;
+            display: block;
+        }
+ 
+        /* Rodapé */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+ 
+        footer a {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+ 
+    <header id="inicio">
+        <h1>Portal Fórmula 1</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#equipas">Equipas</a></li>
+                <li><a href="#circuitos">Circuitos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <div class="container">
+ 
+        <main>
+ 
+            <section id="noticias">
+                <h2>Notícias</h2>
+ 
+                <article>
+                    <h3>Última corrida</h3>
+                    <p>Este ultimo GP de Singapura foi algo especial, com Max verstappen a vencer pela segunda vez consecutiva. Com o Pódio sendo concluído por Charles Leclerc e Kimi Antonelli.</p>
+                    <div class="imagens">
+                        <p><img src="maxWinGPSingapura.jpg" alt="Max verstappen vence GP de Singapura"></p>
+                        <p><img src="podiumGpSingapura.jpg" alt="Pódio GP de Singapura"></p>
+                    </div>
+                </article>
+ 
+                <article>
+                    <h3>Qualifying Singapore Grand Prix</h3>
+                    <p>Quem conseguiu a pole position no GP de Singapura foi Max Verstappen, liderando a qualificação desde o Q1, com Leclerc em segundo e Hamilton em terceiro por margens minúsculas.</p>
+                    <div class="imagens">
+                        <p><img src="verstappenPoleGP.jpg" alt="Max Verstappen na pole position"></p>
+                        <p><img src="polePookiesGP.jpg" alt="top 3 do qualifying do GP de Singapura"></p>
+                    </div>
+                </article>
+ 
+                <article>
+                    <h3>Próximo Grande Prémio</h3>
+                    <p>Texto sobre a próxima corrida.</p>
+                    <div class="imagens">
+                        <p>imagem aqui</p>
+                        <p>imagem aqui</p>
+                    </div>
+                </article>
+            </section>
+ 
+            <section id="equipas">
+                <h2>Equipas e Pilotos</h2>
+ 
+                <article>
+                    <h3>Equipa 1</h3>
+                    <p>Texto sobre a equipa.</p>
+                    <div class="imagens">
+                        <p>imagem aqui</p>
+                        <p>imagem aqui</p>
+                    </div>
+                </article>
+ 
+                <article>
+                    <h3>Equipa 2</h3>
+                    <p>Texto sobre a equipa.</p>
+                    <div class="imagens">
+                        <p>imagem aqui</p>
+                        <p>imagem aqui</p>
+                    </div>
+                </article>
+ 
+                <article>
+                    <h3>Piloto em destaque</h3>
+                    <p>Texto sobre o piloto.</p>
+                    <div class="imagens">
+                        <p>imagem aqui</p>
+                        <p>imagem aqui</p>
+                    </div>
+                </article>
+            </section>
+ 
+            <section id="circuitos">
+                <h2>Circuitos</h2>
+ 
+                <article>
+                    <h3>Circuito 1</h3>
+                    <p>Texto sobre o circuito.</p>
+                    <div class="imagens">
+                        <p>imagem aqui</p>
+                        <p>imagem aqui</p>
+                    </div>
+                </article>
+ 
+                <article>
+                    <h3>Circuito 2</h3>
+                    <p>Texto sobre o circuito.</p>
+                    <div class="imagens">
+                        <p>imagem aqui</p>
+                        <p>imagem aqui</p>
+                    </div>
+                </article>
+ 
+                <article>
+                    <h3>Circuito 3</h3>
+                    <p>Texto sobre o circuito.</p>
+                    <div class="imagens">
+                        <p>imagem aqui</p>
+                        <p>imagem aqui</p>
+                    </div>
+                </article>
+            </section>
+ 
+        </main>
+ 
+        <aside>
+            <h2>Classificações</h2>
+ 
+            <h3>Pilotos</h3>
+            <ol>
+                <li>Piloto 1 - 000 pontos</li>
+                <li>Piloto 2 - 000 pontos</li>
+                <li>Piloto 3 - 000 pontos</li>
+            </ol>
+ 
+            <h3>Equipas</h3>
+            <ol>
+                <li>Equipa 1 - 000 pontos</li>
+                <li>Equipa 2 - 000 pontos</li>
+                <li>Equipa 3 - 000 pontos</li>
+            </ol>
+ 
+            <h3>Próximas corridas</h3>
+            <ul>
+                <li>Grande Prémio 1 - data</li>
+                <li>Grande Prémio 2 - data</li>
+                <li>Grande Prémio 3 - data</li>
+            </ul>
+        </aside>
+ 
+    </div>
+ 
+    <footer id="contacto">
+        <address>
+            <a href="mailto:31366@esjaloures.org">31366@esjaloures.org</a>
+        </address>
+        <p>&copy; 2026 Portal Fórmula 1</p>
+    </footer>
+ 
+</body>
+</html>
