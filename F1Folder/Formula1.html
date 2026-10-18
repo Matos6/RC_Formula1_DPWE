@@ -17,11 +17,16 @@
             line-height: 1.5;
         }
  
-
         header {
             background: #333;
-            color: white;
+            color: #E10600;
             padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        header h1 {
+            text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px  2px 0 #fff, 2px  2px 0 #fff;
         }
  
         nav ul {
@@ -36,6 +41,11 @@
             text-decoration: none;
         }
  
+        nav a:hover {
+            background-color: #E10600;
+            border-radius: 20px;
+            padding: 10px;
+        }
 
         .container {
             display: flex;
@@ -53,11 +63,19 @@
             padding: 20px;
         }
  
-        aside ol,
         aside ul {
             margin-left: 20px;
+            list-style: none;
         }
  
+        aside li {
+            background: #fff;
+            margin-bottom: 1px;
+            font-size: 16px;
+            margin-right: 8px;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
 
         section {
             margin-bottom: 30px;
@@ -69,7 +87,6 @@
             margin-top: 10px;
         }
  
-
         .imagens {
             display: flex;
             gap: 20px;
@@ -83,23 +100,26 @@
             padding: 40px;
             text-align: center;
         }
+
         .imagens img{
             width: 100%;
-            height:300px;
+            height: 300px;
             object-fit: contain;
             display: block;
         }
  
-
         footer {
             background: #333;
             color: white;
             text-align: center;
             padding: 20px;
+            position: sticky;
+            bottom: 0;
         }
  
         footer a {
             color: white;
+            display: block;
         }
 
     </style>
@@ -222,40 +242,47 @@
             <h2>Classificações</h2>
  
             <h3>Driver Standings</h3>
-            <ol>
-                <li>Kimi Antonelli - 340 pontos</li>
-                <li>George Russell - 238 pontos</li>
-                <li>Lewis Hamilton - 229 pontos</li>
-                <li>Max Verstappen - 221 pontos</li>
-                <li>Charles Leclerc - 215 pontos</li>
-                <li>Lando Norris - 201 pontos</li>
-                <li>Oscar Piastri - 138 pontos</li>
-                <li>Isack Hadjar - 97 pontos</li>
-                <li>Liam Lawson - 75 pontos</li>
-                <li>Pierre Gasly - 41 pontos</li>
-                <li>Arvin Lindblad - 38 pontos</li>
-                <li>Franco Colapinto - 27 pontos</li>
-                <li>Oliver Bearman - 23 pontos</li>
-                <li>Nico Hulkenberg - 13 pontos</li>
-                <li>Gabriel Bortoleto - 10 pontos</li>
-                <li>Esteban Ocon - 7 pontos</li>
-                <li>Fernando Alonso - 7 pontos</li>
-                <li>Carlos Sainz - 7 pontos</li>
-                <li>Alexander Albon - 5 pontos</li>
-                <li>Yuki Tsunoda - 1 ponto</li>
-                <li>Lance Stroll - 0 pontos</li>
-                <li>Valtteri Bottas - 0 pontos</li>
-                <li>Sergio Perez - 0 pontos</li>
-        
-                
-            </ol>
+            <ul>
+                <li><span>1.</span> Kimi Antonelli - 340 pontos</li>
+                <li><span>2.</span> George Russell - 238 pontos</li>
+                <li><span>3.</span> Lewis Hamilton - 229 pontos</li>
+                <li><span>4.</span> Max Verstappen - 221 pontos</li>
+                <li><span>5.</span> Charles Leclerc - 215 pontos</li>
+                <li><span>6.</span> Lando Norris - 201 pontos</li>
+                <li><span>7.</span> Oscar Piastri - 138 pontos</li>
+                <li><span>8.</span> Isack Hadjar - 97 pontos</li>
+                <li><span>9.</span> Liam Lawson - 75 pontos</li>
+                <li><span>10.</span> Pierre Gasly - 41 pontos</li>
+                <li><span>11.</span> Arvin Lindblad - 38 pontos</li>
+                <li><span>12.</span> Franco Colapinto - 27 pontos</li>
+                <li><span>13.</span> Oliver Bearman - 23 pontos</li>
+                <li><span>14.</span> Nico Hulkenberg - 13 pontos</li>
+                <li><span>15.</span> Gabriel Bortoleto - 10 pontos</li>
+                <li><span>16.</span> Esteban Ocon - 7 pontos</li>
+                <li><span>17.</span> Fernando Alonso - 7 pontos</li>
+                <li><span>18.</span> Carlos Sainz - 7 pontos</li>
+                <li><span>19.</span> Alexander Albon - 5 pontos</li>
+                <li><span>20.</span> Yuki Tsunoda - 1 ponto</li>
+                <li><span>21.</span> Lance Stroll - 0 pontos</li>
+                <li><span>22.</span> Valtteri Bottas - 0 pontos</li>
+                <li><span>23.</span> Sergio Perez - 0 pontos</li>
+            </ul>
+
  
             <h3>Equipas</h3>
-            <ol>
-                <li>Equipa 1 - 000 pontos</li>
-                <li>Equipa 2 - 000 pontos</li>
-                <li>Equipa 3 - 000 pontos</li>
-            </ol>
+            <ul>
+                <li><span>1.</span> Mercedes - 578 pontos</li>
+                <li><span>2.</span> Ferrari - 444 pontos</li>
+                <li><span>3.</span> McLaren - 339 pontos</li>
+                <li><span>4.</span> Red Bull Racing - 332 pontos</li>
+                <li><span>5.</span> Racing Bulls - 100 pontos</li>
+                <li><span>6.</span> Alpine - 68 pontos</li>
+                <li><span>7.</span> Haas F1 Team - 30 pontos</li>
+                <li><span>8.</span> Audi - 23 pontos</li>
+                <li><span>9.</span> Williams - 12 pontos</li>
+                <li><span>10.</span> Aston Martin - 7 pontos</li>
+                <li><span>11.</span> Cadillac - 0 pontos</li>
+            </ul>
  
             <h3>Próximas corridas</h3>
             <ul>
@@ -270,6 +297,7 @@
     <footer id="contacto">
         <address>
             <a href="mailto:31366@esjaloures.org">31366@esjaloures.org</a>
+            <a href="mailto:32058@esjaloures.org">32058@esjaloures.org</a>
         </address>
         <p>&copy; 2026 Portal Fórmula 1</p>
     </footer>
