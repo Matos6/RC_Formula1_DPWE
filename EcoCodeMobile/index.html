@@ -15,39 +15,73 @@
       body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: #f7f8f1;
+        background: linear-gradient(135deg, #d6e69e, #fff);
         color: #222;
       }
+
       nav {
         position: fixed;
         top: 0;
         width: 100%;
         height: 90px;
-        background: #26311a;
+        background: #0e160a;
         color: #fff;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 8px;
         transition: height 0.4s;
-        z-index: 10;
-      }
+        z-index: 1000;
+     }
+
       nav.scrolled {
-    height: 65px;
-    background: #1b2413;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
+        height: 65px;
+        background: #1b2413;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      nav a {
+        color: #c8e477;
+        margin-left: 20px;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        background-color: #c8e477;
+        border-radius: 20px;
+        padding: 10px;
+        color: #0e160a;
+      }
+
+      nav .logo {
+        font-weight: bold;
+        color: #c8e477;
+      }
+
+      header {
+        margin-top: 90px;
+        flex: 1;
+      }
+
+      footer {
+        background: #0e160a;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
     </style>
   </head>
   <body>
+
     <nav id="navBar">
       <div class="logo">Eco Code Mobile</div>
       <div>
-        <a href="#classificacao">ínicio</a>
-        <a href="#graficos">naosei</a>
+        <a href="#classificacao">Ínicio</a>
+        <a href="#graficos">Gráfico</a>
         <a href="#sobre">Sobre</a>
       </div>
     </nav>
+
     <header class="hero">
       <div>
         <h1>General Classification</h1>
@@ -97,79 +131,22 @@
         <a href="#classificacao">Ver Classificação</a>
       </div>
     </header>
-    <header class="hero">
+      <header class="hero">
       <div>
         <h1>General Classification</h1>
         <p>Classificação após a etapa 6</p>
         <a href="#classificacao">Ver Classificação</a>
       </div>
     </header>
-    <header class="hero">
-      <div>
-        <h1>General Classification</h1>
-        <p>Classificação após a etapa 6</p>
-        <a href="#classificacao">Ver Classificação</a>
-      </div>
-    </header>
-    <header class="hero">
-      <div>
-        <h1>General Classification</h1>
-        <p>Classificação após a etapa 6</p>
-        <a href="#classificacao">Ver Classificação</a>
-      </div>
-    </header>
-    <header class="hero">
-      <div>
-        <h1>General Classification</h1>
-        <p>Classificação após a etapa 6</p>
-        <a href="#classificacao">Ver Classificação</a>
-      </div>
-    </header>
-    <header class="hero">
-      <div>
-        <h1>General Classification</h1>
-        <p>Classificação após a etapa 6</p>
-        <a href="#classificacao">Ver Classificação</a>
-      </div>
-    </header>
-    <header class="hero">
-      <div>
-        <h1>General Classification</h1>
-        <p>Classificação após a etapa 6</p>
-        <a href="#classificacao">Ver Classificação</a>
-      </div>
-    </header>
-    <header class="hero">
-      <div>
-        <h1>General Classification</h1>
-        <p>Classificação após a etapa 6</p>
-        <a href="#classificacao">Ver Classificação</a>
-      </div>
-    </header>
- 
-    <main>
-      <section id="classificacao">
-        <h2>Classificação Geral</h2>
-        <p>Clica num ciclista para ver mais detalhes.</p>
-        <div class="tabela-scroll">
-          <table>
-            <thead>
-              <tr>
-                <th>Posição</th>
-                <th>Nome</th>
-                <th>Equipa</th>
-                <th>Tempo</th>
-              </tr>
-            </thead>
-          </table>
-        </div>
-      </section>
-    </main>
-    <div id="modal" class="modal">
-      <div class="modal-card">
-        <button id="fechar">X</button>
-      </div>
-    </div>
+
+    <footer id="contacto">
+        <address>
+            <a href="mailto:31366@esjaloures.org">31366@esjaloures.org</a>
+            <a href="mailto:32058@esjaloures.org">32058@esjaloures.org</a>
+        </address>
+        <p>&copy; 2026/2027 Eco Code Mobile</p>
+    </footer>
+
     <script>
       // Aqui vem o JavaScript
       const navBar = document.getElementById("navBar");
@@ -182,5 +159,6 @@
     }
 });
     </script>
+
   </body>
 </html>
